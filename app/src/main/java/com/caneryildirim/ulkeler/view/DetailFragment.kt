@@ -11,6 +11,7 @@ import com.caneryildirim.ulkeler.R
 import com.caneryildirim.ulkeler.databinding.FragmentDetailBinding
 import com.caneryildirim.ulkeler.databinding.FragmentFeedBinding
 import com.caneryildirim.ulkeler.util.downloadUrl
+import com.caneryildirim.ulkeler.util.isNull
 import com.caneryildirim.ulkeler.viewModel.DetailViewModel
 import com.caneryildirim.ulkeler.viewModel.FeedViewModel
 
@@ -37,6 +38,7 @@ class DetailFragment : Fragment() {
             val countryUUID=DetailFragmentArgs.fromBundle(it).countryUUID
             viewModel.getDataFromRoom(countryUUID,requireContext())
         }
+
 
         observeLiveData()
 
