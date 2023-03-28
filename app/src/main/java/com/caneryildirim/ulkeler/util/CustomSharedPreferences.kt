@@ -4,8 +4,9 @@ import android.content.Context
 import android.content.SharedPreferences
 import androidx.core.content.edit
 import androidx.preference.PreferenceManager
+import javax.inject.Inject
 
-class CustomSharedPreferences {
+class CustomSharedPreferences @Inject constructor() {
 
     companion object{
         private val PREFERENCE_TIME="Preference_Time"
